@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: f3f3f3;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uap_pbo.MenuPageController">
+   <children>
+      <VBox prefHeight="540.0" prefWidth="257.0" style="-fx-background-color: ffffff;">
+         <children>
+            <Pane prefHeight="167.0" prefWidth="258.0" style="-fx-background-color: ffffff;" />
+            <Button fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#pergiKeHome" prefHeight="53.0" prefWidth="257.0" style="-fx-background-color: f3f3f3;" text="Home" textFill="#b5b5b5">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnData" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#pergiKeData" prefHeight="53.0" prefWidth="257.0" style="-fx-background-color: f3f3f3;" text="Data Barang" textFill="#b5b5b5">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="257.0" style="-fx-background-color: #2b49b3;" text="Daftar Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnTrans" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onAction="#pergiTrans" prefHeight="53.0" prefWidth="257.0" style="-fx-background-color: f3f3f3;" text="Transaksi" textFill="#b5b5b5">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Pane prefHeight="105.0" prefWidth="258.0" />
+         </children>
+      </VBox>
+      <StackPane layoutX="257.0" layoutY="-1.0" prefHeight="540.0" prefWidth="701.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TabPane prefHeight="540.0" prefWidth="701.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Barang">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Pane prefHeight="56.0" prefWidth="701.0" style="-fx-background-color: f3f3f3;">
+                                       <children>
+                                          <Label layoutX="302.0" layoutY="14.0" text="Menu Barang">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <TableView prefHeight="455.0" prefWidth="701.0" style="-fx-background-color: ffffff;">
+                                       <columns>
+                                          <TableColumn prefWidth="68.5714111328125" text="Barcode" />
+                                          <TableColumn minWidth="0.0" prefWidth="105.14288330078125" text="Kategori" />
+                                          <TableColumn minWidth="0.0" prefWidth="145.14285278320312" text="Nama" />
+                                          <TableColumn minWidth="0.0" prefWidth="133.142822265625" text="Harga" />
+                                          <TableColumn minWidth="0.0" prefWidth="73.142822265625" text="Jumlah" />
+                                          <TableColumn minWidth="0.0" prefWidth="92.5714111328125" text="Diskon" />
+                                          <TableColumn minWidth="0.0" prefWidth="86.2857666015625" text="Expired" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </Tab>
+                        <Tab text="Makanan">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Pane prefHeight="48.0" prefWidth="701.0" style="-fx-background-color: f3f3f3;">
+                                       <children>
+                                          <Label layoutX="302.0" layoutY="14.0" text="Menu Makanan">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <TableView prefHeight="465.0" prefWidth="701.0" style="-fx-background-color: ffffff;">
+                                       <columns>
+                                          <TableColumn prefWidth="90.28564453125" text="ID" />
+                                          <TableColumn minWidth="0.0" prefWidth="156.57147216796875" text="Nama" />
+                                          <TableColumn minWidth="0.0" prefWidth="138.28573608398438" text="Harga" />
+                                          <TableColumn minWidth="0.0" prefWidth="76.5714111328125" text="Jumlah" />
+                                          <TableColumn minWidth="0.0" prefWidth="113.7142333984375" text="Diskon" />
+                                          <TableColumn minWidth="0.0" prefWidth="126.2857666015625" text="Daya Tahan" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: #F3F3F3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uap_pbo.HomeController">
+   <children>
+      <Label alignment="CENTER" layoutX="400.0" layoutY="32.0" prefHeight="55.0" prefWidth="223.0" text="FTRade" textFill="#2b49b3">
+         <font>
+            <Font name="Calibri Bold" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnData" layoutX="623.0" layoutY="301.0" mnemonicParsing="false" onAction="#pergiKeData" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: #2b49b3; -fx-background-radius: 5;" text="Data Barang" textFill="WHITE">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.7456140518188477" green="0.7341076731681824" blue="0.7341076731681824" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnTrans" layoutX="423.0" layoutY="301.0" mnemonicParsing="false" onAction="#pergiTrans" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: #2b49b3; -fx-background-radius: 5;" text="Transaksi" textFill="WHITE">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.7456140518188477" green="0.7341076731681824" blue="0.7341076731681824" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnMenu" layoutX="222.0" layoutY="301.0" mnemonicParsing="false" onAction="#pergiKeMenu" prefHeight="25.0" prefWidth="177.0" style="-fx-background-color: #2b49b3; -fx-background-radius: 5;" text="Daftar Menu" textFill="WHITE">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.7456140518188477" green="0.7341076731681824" blue="0.7341076731681824" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </Button>
+      <Label alignment="CENTER" layoutX="316.0" layoutY="87.0" prefHeight="55.0" prefWidth="417.0" text="Ciao, welcome back!">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
